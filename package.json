@@ -3,6 +3,10 @@
     "flexsearch": "^0.6.32",
     "he": "^1.2.0"
   },
+  "devDependencies": {
+    "vuepress": "^1.8.2",
+    "vuepress-types": "^0.9.4"
+  },
   "description": "En/De/Cn/Ja/Ko languages full text search",
   "homepage": "https://github.com/QYueWang/vuepress-plugin-flexsearch-pro",
   "keywords": [
