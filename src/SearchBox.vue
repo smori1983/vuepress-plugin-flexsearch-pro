@@ -108,7 +108,7 @@ export default {
         });
       }
 
-      return result;
+      return result.filter((page) => page.text !== "");
     },
 
     // make suggestions align right when there are not enough items
@@ -247,6 +247,11 @@ export default {
         queryIndex === -1
           ? content.toLowerCase().indexOf(queryFirstWord.toLowerCase())
           : queryIndex;
+
+      if (startIndex < 0) {
+        return "";
+      }
+
       let prefix = "";
       if (startIndex > 15) {
         startIndex -= 15;
